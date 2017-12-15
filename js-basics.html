@@ -1,17 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="content-type" content="text/html; charset=UTF8">
-    <link rel="stylesheet" href="http://www.joelotter.com/kajero/dist/main.css">
-</head>
-
-<body>
-    <script type="text/markdown" id="kajero-md">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=UTF8">
+        <link rel="stylesheet" href="http://www.joelotter.com/kajero/dist/main.css">
+    </head>
+    <body>
+        <script type="text/markdown" id="kajero-md">
             ---
             author: "Vedran Marsic AKA Fosna"
-            created: "Thu Dec 14 2017 07:38:10 GMT+0100 (Central European Standard Time)"
+            created: "Fri Dec 15 2017 08:37:31 GMT+0100 (Central European Standard Time)"
             show_footer: true
             ---
 
@@ -61,7 +59,7 @@
               * ...
 
             ```javascript; runnable
-            // 2 Call by value with primitive type
+            // Call by value with primitive type
 
             function increment(qlux){
                 qlux = qlux + 1; 
@@ -75,7 +73,7 @@
             ```
 
             ```javascript; runnable
-            // Pseudo call by reference (with reference type)
+            // Copying reference from one variable to another
 
             var foo = {
                 value: 2
@@ -89,8 +87,7 @@
 
             This is actually call by value on reference type. It means that reference is being copied, so it points to the same place in memory.
         </script>
-    <div id="kajero"></div>
-    <script type="text/javascript" src="http://www.joelotter.com/kajero/dist/bundle.js"></script>
-</body>
-
+        <div id="kajero"></div>
+        <script type="text/javascript" src="http://www.joelotter.com/kajero/dist/bundle.js"></script>
+    </body>
 </html>
