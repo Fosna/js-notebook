@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <link rel="stylesheet" href="http://www.joelotter.com/kajero/dist/main.css">
+</head>
+
+<body>
+    <script type="text/markdown" id="kajero-md">
+            ---
+            author: "Vedran Marsic AKA Fosna"
+            created: "Thu Dec 14 2017 07:38:10 GMT+0100 (Central European Standard Time)"
+            show_footer: true
+            ---
+
+            # JavaScript Basics
+            ## at Axilis JavaScript School
+
+
+
+
+            ## JavaScript School Agenda
+
+            1. **Basics**
+            2. Server apps with NodeJS
+            3. Client apps with ReactJS
+            4. Doing project together
+            5. Student project
+
+
+            ![Java is to JavaScript as ham is to hamster](https://media-exp2.licdn.com/mpr/mpr/AAEAAQAAAAAAAAMBAAAAJDdkNjE1YjZlLTYyNGQtNGQxNy04OWVkLTIxY2U4NDE4ODcyYQ.jpg)
+
+
+            ## Variables and Types
+
+            * dynamic types
+
+            ```javascript; runnable
+            var a = 'some stirng';
+            var firstType = typeof(a);
+
+            a = 3;
+            var secondType = typeof(a);
+
+            return [firstType, secondType];
+            ```
+
+            * Primitive types - call by value
+              * Number
+              * Boolean
+              * String 
+              * Undefined
+              * Null
+            * Reference types - call by reference 
+              * Function !!!
+              * Array
+              * Object
+              * Date
+              * ...
+
+            ```javascript; runnable
+            // 2 Call by value with primitive type
+
+            function increment(qlux){
+                qlux = qlux + 1; 
+            }
+
+            var foo = {
+                bar: 5
+            };
+            increment(foo.bar);
+            return foo.bar;
+            ```
+
+            ```javascript; runnable
+            // Pseudo call by reference (with reference type)
+
+            var foo = {
+                value: 2
+            }
+
+            var bar = foo;
+            bar.value = 'changed';
+
+            return [foo.value, bar.value];
+            ```
+
+            This is actually call by value on reference type. It means that reference is being copied, so it points to the same place in memory.
+        </script>
+    <div id="kajero"></div>
+    <script type="text/javascript" src="http://www.joelotter.com/kajero/dist/bundle.js"></script>
+</body>
+
+</html>
